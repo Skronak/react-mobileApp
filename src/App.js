@@ -23,7 +23,7 @@ export default function App() {
 
     const randGeneratorFrom = (seed) => {
         const generator = seedrandom(seed);
-        
+
         return (min, max) => Math.floor(generator() * max) + min;
     };
 
@@ -67,18 +67,24 @@ export default function App() {
                                    value={nbPlayers}/>
                         </div>
                         <div className={"bloc"}>
-                            <div>Vous etes joueur n°</div>
-                            <input type="number" disabled={isDetective} className="form-control"
-                                   onChange={e => setIdPlayer(e.target.value)} min='0' value={idPlayer}/>
+                            <div className="table-group-divider"></div>
                         </div>
                         <div className={"bloc"}>
-                            <div className="custom-control custom-switch">
-                                <input type="checkbox" className="custom-control-input" id="customSwitch1"/>
-                                    <label className="custom-control-label" htmlFor="customSwitch1">Detective</label>
+                            <label className="toggle">
+                                <input className="toggle-checkbox" type="checkbox" onChange={handleChange}/>
+                                <div className="toggle-switch"></div>
+                                <span
+                                    className="toggle-label"> {isDetective ? "Vous êtes le détective" : "Vous n'êtes pas le détective"}</span>
+                            </label>
+                        </div>
+                        <div className={"bloc"}>
+                            <div id="collapse" className={isDetective ? "hide" : "show"}>
+                                <div>Vous etes le témoin n°</div>
+                                <input type="number" disabled={isDetective} className="form-control"
+                                       onChange={e => setIdPlayer(e.target.value > nbPlayers ? nbPlayers : e.target.value)} min='0' value={idPlayer}/>
                             </div>
                         </div>
                         <div className={"bloc"}>
-                            <div className="table-group-divider"></div>
                             <div>Affaire selectionnée</div>
                             <select id='caseId' className="form-select" name="case" value={selectedCase}
                                     onChange={(e => setSelectedCase(e.target.value))}>

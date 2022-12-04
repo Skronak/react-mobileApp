@@ -7,7 +7,6 @@ function BoardSuspect(props) {
 
     return (
         <div>
-            <div className="Date">{data.date}</div>
             <div>{data.label}</div>
 
             {isGuilty && (

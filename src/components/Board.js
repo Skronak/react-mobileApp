@@ -4,7 +4,7 @@ function Board(props) {
 
     return (
         <div>
-            <div className="date">{props.date}</div>
+            <div className="date-label">{props.data.date}</div>
             <div>{props.label}</div>
             {props.children}
         </div>

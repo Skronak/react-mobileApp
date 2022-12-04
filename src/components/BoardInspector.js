@@ -5,7 +5,6 @@ function BoardInspector(props) {
 
     return (
         <div>
-            <div className="Date">{data.date}</div>
             <p>Vous etes l'enqueteur</p>
             <div>{data.label}</div>
             <div>Suspects</div>
