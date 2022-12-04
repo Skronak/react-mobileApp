@@ -1,0 +1,97 @@
+[{
+    "key": "0201",
+    "date":"Mardi 2 janvier",
+    "label":"Coincée sur le toit de l'immeuble, une femme nue meurt de froid",
+    "guilty":2,
+    "suspects":[
+        {"role":"Appartement 25-A",
+        "context": "Son conjoint agent immobilier est arrivé à l'improviste pour une vente éclair de leur appartement"},
+        {"role":"Appartement 25-B",
+        "context":"Son conjoint commissaire est arrivé à l'improviste pour poser des caméras de surveillance"},
+        {"role":"Appartement 25-C",
+        "context": "Son conjoint pilote d'avion est arrvié à l'improviste pour une seconde lune de miel"},
+        {"role":"Appartement 25-D",
+        "context": "Son conjoint millionnaire du loto est arrivé à l'improviste pour un tour du monde"},
+        {"role":"Appartement 25-E",
+        "context": "Sa belle mère est arrivée à l'improviste pour se faire héberger pendant une petite semaine"}
+    ],
+    "wordsI":["respectueuse","transatlantique","boulevard","sonnette","accord","milieu"],
+    "wordsG":["légitime","imprévu", "maitresse", "interphone","surprise","cachette"]
+    },{
+        "key": "0224",
+        "date":"Lundi 1 janvier",
+        "label":"Messe diabolique, l'encens saturé d'aphordisiaque provoque une véritable frénésie sexuelle",
+        "guilty":2,
+        "suspects":[
+            {"role":"Archeveque",
+            "context": "Sa ressemblance avec George Clooney lui attirer des regard concupiscent (coquin, sensuels), aurait il craqué?"},
+            {"role":"Archipretre recteur",
+            "context": "On prétend qu'il fréquente des forums tres hot sur internet sous le pseudonyme pépére fouettard"},
+            {"role":"Doyen du chapitre",
+                "context": "On aurait retrouvé dans sa bibliothèque des revue pornographiques cachés dans des livres de priere"},
+                {"role":"Grand prieur du Saint sépulcre",
+                    "context": "On aurait retrouvé des emballages de viagra a moitié consummé dans la cheminé située dans son bureau"},
+                    {"role":"Maitre de chapelle",
+                        "context": "Responsable maniaque de l'entretien des encensoirs, il n'en confie la tache a personne d'autre"}
+                                ],
+        "wordsI":["terme","austère","chair","extase","malin","possession"],
+        "wordsG":["fin","rude", "fécondation", "névrose","infernal","don"]
+    },{
+    "key": "0108",
+    "date":"Lundi 8 janvier",
+    "label":"Un boulanger dans le petrinassomé avec son propre rouleau a patisserie",
+    "guilty":2,
+    "suspects":[
+        {"role":"Boucher",
+            "context": "Avait été accusé par le boulanger d'elever des asticots pour le vendre aux pécheus"},
+        {"role":"Charcutier",
+            "context": "Avait été acusé par le boulanger de mettre de la viande de chien dans ses merguez"},
+        {"role":"Chinois",
+            "context": "Avait été accusé par le boulanger de vendre des nems fourré aux cafards"},
+        {"role":"Patisser",
+            "context": "Avait été accusé par le boulanger de mettre de la sciure dans sa pate"},
+        {"role":"Restaurateur Grec",
+            "context": "Avait été accusé par le boulanger d'employer des turcs non déclarer"}
+    ],
+    "wordsI":["bavard","cafard","ruine","visite","guide","étoile"],
+    "wordsG":["calomnie","rats", "fermeture", "déguisé","analyse","punition"]
+},{
+    "key": "0501",
+    "date":"Vendredi 5 janvier",
+    "label":"Un fraudeur étouffé avec une frite dans les toilettes du tgv paris bruxelle",
+    "guilty":2,
+    "suspects":[
+        {"role":"Barman",
+            "context": "Est le dernier a aoir vu la victime"},
+        {"role":"Chef cuisinier Belge",
+            "context": "Au bar du train, de nombreux témoins affirme l'avoir vu avoir une vive dispute avec la victime"},
+        {"role":"Chef cuisinier Francais",
+            "context": "Dans un couloir du wagon, de nombreux témoins affirme l'avoir vu avoir une vive dispute avec la victime"},
+        {"role":"Controleur",
+            "context": "La victime n'avait pas de titre de transport sur lui"},
+        {"role":"Manager Fast Food",
+            "context": "Est resté seul avec la victime pendant longtemps dans son compartiment"}
+    ],
+    "wordsI":["Autre","voyageur", "éponge", "éffacé","tympan","laisser-passer"],
+    "wordsG":["proche","contremarque","soif","timide","silence","vérification"]
+},{
+    "key": "0410",
+    "date":"Jeudi 4 janvier",
+    "label":"Une voisine trop bruyante pendu avec son propre cable de téléphone",
+    "guilty":2,
+    "suspects":[
+        {"role":"Facteur",
+            "context": "Detestait la victime car devait cogner comme un fou sur la porte pour se faire ouvrir"},
+        {"role":"Gardien",
+            "context": "Harcelé de plainte et d'injonction au sujet des bruits causé par la victime"},
+        {"role":"Voisin du dessous",
+            "context": "Sans doute exaspéré par les bruits de talon causé par la victime toute les nuits"},
+        {"role":"Voisin du dessus",
+            "context": "Sa chambre est juste au dessus de la télé de la victime"},
+        {"role":"Voisin d'en face",
+            "context": "La victime s'essuyait toujours les pieds sur son paillasson"}
+    ],
+    "wordsI":["dormir","fenetre","insupportable","décibel","lourd","aucunement"],
+    "wordsG":["Ecran","fermé", "patience", "oreilles","forcer","quelque-chose"]
+}
+]

@@ -1,0 +1,61 @@
+#start-button, #end-button {
+    margin-top: 2em;
+}
+
+body {
+    background: linear-gradient(-45deg, #ff0000, #521313, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    margin: 5%;
+}
+
+.mainTitle {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.mainTitle {
+    color: white;
+}
+
+.container {
+    background-color: rgb(255,255,255); /* Fallback color */
+    background-color: rgba(255,255,255, 0.5); /* Black w/opacity/see-through */
+    font-size: 1.2em;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+}
+
+#start-button, #end-button{
+    width: 100%;
+    padding-top: 1em;
+}
+
+.bloc {
+    padding-top: 1em;
+}
+
+.Date{
+    background-color: gray;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2em;
+}
