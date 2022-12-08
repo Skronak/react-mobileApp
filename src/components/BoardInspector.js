@@ -15,7 +15,7 @@ function BoardInspector(props) {
                         <div>{data.suspects[i].role}</div>
                         <div>{data.suspects[i].context}</div>
                     </li>
-                ))};
+                ))}
             </ul>
 
         </div>

@@ -6,7 +6,9 @@ import data from './data.json';
 import './bootstrap.min.css';
 import './app.css';
 import seedrandom from 'seedrandom';
-import pic from "./img/detective_avatar.png";
+import detective from "./img/avatar-detective.png";
+import criminal from "./img/avatar-criminal.png";
+import innocent from "./img/avatar-innocent.png";
 
 export default function App() {
     const [isGameVisible, toggleGameVisible] = useState(false);
@@ -45,10 +47,10 @@ export default function App() {
     }
 
     return (
-        <div>
+        <div onClick={() => setFlipped(!isFlipped)}>
             {!isGameVisible ? <p className={"mainTitle"}>Petits meurtres entre amis - Mobile</p> : null}
 
-            <div className={`container card ${isFlipped && isGameVisible ? "flip" : ""}`} onClick={() => setFlipped(!isFlipped)}>
+            <div className={`container fiche ${isFlipped && isGameVisible ? "flip" : ""}`} >
                 {isGameVisible ? (
                     <>
                             <Board data={cases.get(selectedCase)}>
@@ -63,7 +65,8 @@ export default function App() {
                                        value="Terminer la partie"/>
                             </Board>
                         <div className="back">
-                            <img alt="sdsd" src={pic}/>
+                            <p className={"flip-label"}>{isDetective ? "DETECTIVE" : idPlayer===idGuilty ? "COUPABLE" : "INNOCENT"}</p>
+                            <img alt="avatar" src={isDetective ? detective : idPlayer===idGuilty ? criminal : innocent}/>
                         </div>
                     </>
                 ) : (
