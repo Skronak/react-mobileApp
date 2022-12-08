@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/react-mobileApp/static/css/main.bf1e6472.css",
-    "main.js": "/react-mobileApp/static/js/main.e0c162d9.js",
-    "static/media/detective_avatar.png": "/react-mobileApp/static/media/detective_avatar.6c68349e7d4aa6306f40.png",
+    "main.css": "/react-mobileApp/static/css/main.313e86b7.css",
+    "main.js": "/react-mobileApp/static/js/main.5dd78808.js",
+    "static/media/avatar-innocent.png": "/react-mobileApp/static/media/avatar-innocent.dafe8b5dbe4d49b4ec5d.png",
+    "static/media/avatar-criminal.png": "/react-mobileApp/static/media/avatar-criminal.798e0889f6f43bf74896.png",
+    "static/media/avatar-detective.png": "/react-mobileApp/static/media/avatar-detective.f26714751aa74a1351ea.png",
     "index.html": "/react-mobileApp/index.html",
-    "main.bf1e6472.css.map": "/react-mobileApp/static/css/main.bf1e6472.css.map",
-    "main.e0c162d9.js.map": "/react-mobileApp/static/js/main.e0c162d9.js.map"
+    "main.313e86b7.css.map": "/react-mobileApp/static/css/main.313e86b7.css.map",
+    "main.5dd78808.js.map": "/react-mobileApp/static/js/main.5dd78808.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf1e6472.css",
-    "static/js/main.e0c162d9.js"
+    "static/css/main.313e86b7.css",
+    "static/js/main.5dd78808.js"
   ]
 }
