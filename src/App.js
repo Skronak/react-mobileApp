@@ -6,6 +6,7 @@ import data from './data.json';
 import './bootstrap.min.css';
 import './app.css';
 import seedrandom from 'seedrandom';
+import pic from "./img/detective_avatar.png";
 
 export default function App() {
     const [isGameVisible, toggleGameVisible] = useState(false);
@@ -16,6 +17,7 @@ export default function App() {
     const [selectedCase, setSelectedCase] = useState('0201');
     const [idGuilty, setIdGuilty] = useState(0);
     const cases = new Map(data.map(obj => [obj.key, obj]));
+    const [isFlipped, setFlipped] = useState(false);
 
     const handleChange = (event) => {
         toggleIsDetective(event.target.checked);
@@ -31,28 +33,39 @@ export default function App() {
         console.log(idGuilty);
     }, [idGuilty]);
 
-    const startGame = () => {
+    const startGame = (e) => {
         let rand = randGeneratorFrom(seed + selectedCase);
         setIdGuilty(rand(1, nbPlayers));
-        toggleGameVisible(true);
+        toggleScreen(e);
+    }
+
+    const toggleScreen = (e) => {
+        toggleGameVisible(!isGameVisible);
+        e.stopPropagation();
     }
 
     return (
         <div>
             {!isGameVisible ? <p className={"mainTitle"}>Petits meurtres entre amis - Mobile</p> : null}
-            <div className={"container"}>
+
+            <div className={`container card ${isFlipped && isGameVisible ? "flip" : ""}`} onClick={() => setFlipped(!isFlipped)}>
                 {isGameVisible ? (
-                    <Board data={cases.get(selectedCase)}>
-                        {isDetective ? (
-                            <BoardInspector data={cases.get(selectedCase)} nbPlayers={nbPlayers}/>
-                        ) : (
-                            <BoardSuspect data={cases.get(selectedCase)} idPlayer={idPlayer}
-                                          isGuilty={idPlayer === idGuilty}/>
-                        )}
-                        <input id='end-button' type="button" className="btn btn-dark"
-                               onClick={() => toggleGameVisible(false)}
-                               value="Terminer la partie"/>
-                    </Board>
+                    <>
+                            <Board data={cases.get(selectedCase)}>
+                                {isDetective ? (
+                                    <BoardInspector data={cases.get(selectedCase)} nbPlayers={nbPlayers}/>
+                                ) : (
+                                    <BoardSuspect data={cases.get(selectedCase)} idPlayer={idPlayer}
+                                                  isGuilty={idPlayer === idGuilty}/>
+                                )}
+                                <input id='end-button' type="button" className="btn btn-dark"
+                                       onClick={(e) => toggleScreen(e)}
+                                       value="Terminer la partie"/>
+                            </Board>
+                        <div className="back">
+                            <img src={pic}/>
+                        </div>
+                    </>
                 ) : (
                     <form>
                         <div className={"bloc"}>
@@ -81,7 +94,8 @@ export default function App() {
                             <div id="collapse" className={isDetective ? "hide" : "show"}>
                                 <div>Vous etes le témoin n°</div>
                                 <input type="number" disabled={isDetective} className="form-control"
-                                       onChange={e => setIdPlayer(e.target.value > nbPlayers ? nbPlayers : e.target.value)} min='0' value={idPlayer}/>
+                                       onChange={e => setIdPlayer(e.target.value > nbPlayers ? nbPlayers : e.target.value)}
+                                       min='0' value={idPlayer}/>
                             </div>
                         </div>
                         <div className={"bloc"}>
@@ -93,7 +107,7 @@ export default function App() {
                         </div>
                         <div className={"bloc"}>
                             <input id='start-button' type="button" className="btn btn-success"
-                                   onClick={() => startGame()}
+                                   onClick={(e) => startGame(e)}
                                    value="Commencer"/>
                         </div>
                     </form>
