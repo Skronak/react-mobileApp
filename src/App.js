@@ -63,7 +63,7 @@ export default function App() {
                                        value="Terminer la partie"/>
                             </Board>
                         <div className="back">
-                            <img src={pic}/>
+                            <img alt="sdsd" src={pic}/>
                         </div>
                     </>
                 ) : (

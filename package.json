@@ -11,6 +11,9 @@
     "seedrandom": "3.0.5",
     "web-vitals": "^2.1.4"
   },
+  "config": {
+    "fund": false
+  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "git push origin `git subtree split --prefix dist master`:gh-pages --force",
