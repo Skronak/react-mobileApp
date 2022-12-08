@@ -13,19 +13,22 @@ function BoardSuspect(props) {
                 <div>Vous etes le coupable !</div>
             )}
             <div className="role">Role {role.role}</div>
-            <ul className="list-group">
-                <li className="list-group-item active">Premier Interrogatoire</li>
-                {[0, 1, 2].map(word => (
-                    <li key={word} className="list-group-item">{words[word]}</li>
-                ))}
-            </ul>
-            <ul className="list-group">
-                <li className="list-group-item active">Second Interrogatoire</li>
-                {[3, 4, 5].map(word => (
-                    <li key={word} className="list-group-item">{words[word]}</li>
-                ))}
-            </ul>
-            <div className="board-words-2"/>
+            <div className={"bloc"}>
+                <ul className="list-group">
+                    <li className="list-group-item active">Premier Interrogatoire</li>
+                    {[0, 1, 2].map(word => (
+                        <li key={word} className="list-group-item">{words[word]}</li>
+                    ))}
+                </ul>
+            </div>
+            <div className={"bloc"}>
+                <ul className="list-group">
+                    <li className="list-group-item active">Second Interrogatoire</li>
+                    {[3, 4, 5].map(word => (
+                        <li key={word} className="list-group-item">{words[word]}</li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }

@@ -41,6 +41,11 @@ export default function App() {
         toggleScreen(e);
     }
 
+    const endGame = (e) => {
+        toggleIsDetective(false);
+        toggleScreen(e);
+    }
+
     const toggleScreen = (e) => {
         toggleGameVisible(!isGameVisible);
         e.stopPropagation();
@@ -61,7 +66,7 @@ export default function App() {
                                                   isGuilty={idPlayer === idGuilty}/>
                                 )}
                                 <input id='end-button' type="button" className="btn btn-dark"
-                                       onClick={(e) => toggleScreen(e)}
+                                       onClick={(e) => endGame(e)}
                                        value="Terminer la partie"/>
                             </Board>
                         <div className="back">

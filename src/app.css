@@ -140,13 +140,14 @@ body {
 
 .front {
     backface-visibility: hidden;
+    transform: rotateX(0deg);
     position: absolute;
     margin-right: 5%;
 }
 
 .back {
     position: relative;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) rotateX(0deg);
     backface-visibility: hidden;
 }
 
