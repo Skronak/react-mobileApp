@@ -6,7 +6,7 @@ function BoardInspector(props) {
     return (
         <div>
             <p>Vous etes l'enqueteur</p>
-            <div>{data.label}</div>
+            <div className={"case-context"}>{data.label}</div>
             <div>Suspects</div>
             <ul className="list-group">
                 {/*//attention si ca depasse liste*/}

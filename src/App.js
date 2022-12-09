@@ -9,6 +9,9 @@ import seedrandom from 'seedrandom';
 import detective from "./img/avatar-detective.png";
 import criminal from "./img/avatar-criminal.png";
 import innocent from "./img/avatar-innocent.png";
+import logo from "./img/logo.png";
+
+import AnimatedBackground from "./components/animatedBackground/AnimatedBackground";
 
 export default function App() {
     const [isGameVisible, toggleGameVisible] = useState(false);
@@ -53,9 +56,11 @@ export default function App() {
 
     return (
         <div onClick={() => setFlipped(!isFlipped)}>
+            {/*<AnimatedBackground/>*/}
+            <img src={logo} className={"background-container"}/>
             {!isGameVisible ? <p className={"mainTitle"}>Petits meurtres entre amis - Mobile</p> : null}
-
             <div className={`container fiche ${isFlipped && isGameVisible ? "flip" : ""}`} >
+
                 {isGameVisible ? (
                     <>
                             <Board data={cases.get(selectedCase)}>

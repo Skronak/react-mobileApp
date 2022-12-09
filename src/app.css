@@ -4,6 +4,17 @@ body {
     animation: gradient 20s ease infinite;
     margin: 0 5% 0 5%;
     height: 100vh;
+    overflow: hidden;
+}
+
+.background-container{
+    position: fixed;
+    top: 40%;
+    left:0;
+    bottom: 0;
+    right: 10%;
+    height: 80%;
+    width: 90%;
 }
 
 .mainTitle {
@@ -14,6 +25,8 @@ body {
 
 #start-button, #end-button {
     margin-top: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 @keyframes gradient {
@@ -42,12 +55,22 @@ body {
 }
 
 .date-label {
-    background-color: gray;
+    background-color: #2b2b2b;
     color: white;
-    border-radius: 25px;
+    border: solid white;
+    /*border-radius: 25px;*/
     text-align: center;
     font-weight: 700;
     font-size: 1.2em;
+}
+.case-context {
+    padding: 5% 0% 5% 0%;
+    margin-top: 1em;
+}
+
+.case-role {
+    background-color: white;
+    text-align: center;
 }
 
 .toggle {
@@ -65,6 +88,16 @@ body {
     vertical-align: middle;
     transition: background 0.25s;
 }
+
+.list-group {
+    --bs-list-group-active-bg: #2b2b2b;
+    border-color: white;
+}
+
+list-group-item {
+    text-align: center;
+}
+
 .toggle-switch:before, .toggle-switch:after {
     content: "";
 }
@@ -130,7 +163,9 @@ body {
     transform-origin: right;
     transition: transform 1s;
 }
-
+.fiche.criminal{
+    background: radial-gradient(#bb2d3b 10px, hsla(0,0%,100%,.5) 50%)
+}
 .fiche.flip {
     transform: translateX(-100%) rotateY(-180deg);
     font-size: 1.2em;

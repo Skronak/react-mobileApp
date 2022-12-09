@@ -7,12 +7,8 @@ function BoardSuspect(props) {
 
     return (
         <div>
-            <div>{data.label}</div>
-
-            {isGuilty && (
-                <div>Vous etes le coupable !</div>
-            )}
-            <div className="role">Role {role.role}</div>
+            <div className={"case-context"}>{data.label}</div>
+            <div className="case-role">Role {role.role}</div>
             <div className={"bloc"}>
                 <ul className="list-group">
                     <li className="list-group-item active">Premier Interrogatoire</li>
