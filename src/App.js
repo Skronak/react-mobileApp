@@ -65,16 +65,16 @@ export default function App() {
                                 {isDetective ? (
                                     <BoardInspector data={cases.get(selectedCase)} nbPlayers={nbPlayers}/>
                                 ) : (
-                                    <BoardSuspect data={cases.get(selectedCase)} idPlayer={idPlayer}
-                                                  isGuilty={idPlayer === idGuilty}/>
+                                    <BoardSuspect data={cases.get(selectedCase)} idPlayer={+idPlayer}
+                                                  isGuilty={+idPlayer === +idGuilty}/>
                                 )}
                                 <input id='end-button' type="button" className="btn btn-dark"
                                        onClick={(e) => endGame(e)}
                                        value="Terminer la partie"/>
                             </Board>
                         <div className="back">
-                            <p className={"flip-label"}>{isDetective ? "DETECTIVE" : idPlayer===idGuilty ? "COUPABLE" : "INNOCENT"}</p>
-                            <img alt="avatar" src={isDetective ? detective : idPlayer===idGuilty ? criminal : innocent}/>
+                            <p className={"flip-label"}>{isDetective ? "DETECTIVE" : +idPlayer===+idGuilty ? "COUPABLE" : "INNOCENT"}</p>
+                            <img alt="avatar" src={isDetective ? detective : +idPlayer===+idGuilty ? criminal : innocent}/>
                         </div>
                     </>
                 ) : (
