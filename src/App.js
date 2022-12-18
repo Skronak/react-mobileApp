@@ -9,7 +9,7 @@ import seedrandom from 'seedrandom';
 import detective from "./img/avatar-detective.png";
 import criminal from "./img/avatar-criminal.png";
 import innocent from "./img/avatar-innocent.png";
-import logo from "./img/logo.png";
+import AnimatedBackground from "./components/animatedBackground/AnimatedBackground.js";
 
 export default function App() {
     const [isGameVisible, toggleGameVisible] = useState(false);
@@ -52,10 +52,14 @@ export default function App() {
         e.stopPropagation();
     }
 
+    const flip = () => {
+        if (isGameVisible) {
+            setFlipped(!isFlipped);
+        }
+    }
     return (
-        <div onClick={() => setFlipped(!isFlipped)}>
-            {/*<AnimatedBackground/>*/}
-            <img src={logo} alt={"background-logo"} className={"background-container"}/>
+        <div onClick={() => flip()}>
+            <AnimatedBackground/>
             {!isGameVisible ? <p className={"mainTitle"}>Petits meurtres entre amis - Mobile</p> : null}
             <div className={`container fiche ${isFlipped && isGameVisible ? "flip" : ""}`} >
 
@@ -111,7 +115,7 @@ export default function App() {
                         </div>
                         <div className={"bloc"}>
                             <div>Affaire selectionnée</div>
-                            <select id='caseId' className="form-select" name="case" value={selectedCase}
+                            <select id='caseId' className="form-select" name="case" size={5} value={selectedCase}
                                     onChange={(e => setSelectedCase(e.target.value))}>
                                 {[...cases.keys()].map(e => <option value={e}>{e}</option>)}
                             </select>

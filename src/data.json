@@ -1,5 +1,5 @@
 [{
-    "key": "0201",
+    "key": "Mort sur le toit",
     "date":"Mardi 2 janvier",
     "label":"Coincée sur le toit de l'immeuble, une femme nue meurt de froid",
     "guilty":2,
@@ -18,7 +18,7 @@
     "wordsI":["respectueuse","transatlantique","boulevard","sonnette","accord","milieu"],
     "wordsG":["légitime","imprévu", "maitresse", "interphone","surprise","cachette"]
     },{
-        "key": "0224",
+        "key": "La messe",
         "date":"Lundi 1 janvier",
         "label":"Messe diabolique, l'encens saturé d'aphordisiaque provoque une véritable frénésie sexuelle",
         "guilty":2,
@@ -37,9 +37,9 @@
         "wordsI":["terme","austère","chair","extase","malin","possession"],
         "wordsG":["fin","rude", "fécondation", "névrose","infernal","don"]
     },{
-    "key": "0108",
+    "key": "Le boulanger",
     "date":"Lundi 8 janvier",
-    "label":"Un boulanger dans le petrinassomé avec son propre rouleau a patisserie",
+    "label":"Un boulanger dans le petrin assomé avec son propre rouleau a patisserie",
     "guilty":2,
     "suspects":[
         {"role":"Boucher",
@@ -56,7 +56,7 @@
     "wordsI":["bavard","cafard","ruine","visite","guide","étoile"],
     "wordsG":["calomnie","rats", "fermeture", "déguisé","analyse","punition"]
 },{
-    "key": "0501",
+    "key": "Le fraudeur du TGV",
     "date":"Vendredi 5 janvier",
     "label":"Un fraudeur étouffé avec une frite dans les toilettes du tgv paris bruxelle",
     "guilty":2,
@@ -75,8 +75,8 @@
     "wordsI":["Autre","voyageur", "éponge", "éffacé","tympan","laisser-passer"],
     "wordsG":["proche","contremarque","soif","timide","silence","vérification"]
 },{
-    "key": "0410",
-    "date":"Jeudi 4 janvier",
+    "key": "La voisine",
+    "date":"Mardi 9 janvier",
     "label":"Une voisine trop bruyante pendu avec son propre cable de téléphone",
     "guilty":2,
     "suspects":[
@@ -94,4 +94,194 @@
     "wordsI":["dormir","fenetre","insupportable","décibel","lourd","aucunement"],
     "wordsG":["Ecran","fermé", "patience", "oreilles","forcer","quelque-chose"]
 }
-]
+,{
+    "key": "Rousse au chocolat",
+    "date":"Mercredi 10 janvier",
+    "label":"Couvert de bleu, le corps d'une rousse retrouvée dans une cuve de chocolat noir",
+    "guilty":3,
+    "suspects":[
+        {"role":"Chauffeur livreur",
+            "context": "Adore prendre des autostoppeuses"},
+        {"role":"Controleur de cuve",
+            "context": "Ancien G.O du Club Meb"},
+        {"role":"Controleur qualité",
+            "context": "Vient de divorcer"},
+        {"role":"Directeur d'usine",
+            "context": "Profite de son statut pour séduire"},
+        {"role":"Mécano d'usine",
+            "context": "Fréquente régulièrement les boites de nuit un peu chaudes"}
+    ],
+    "wordsI":["chocolaterie","livraison","foncé","manoeuvre","gout","superficiel"],
+    "wordsG":["Usine","fournitures", "blanche", "flirt","parfum","tête"]
+},{
+    "key": "Le jackpot",
+    "date":"Mardi 9 janvier",
+    "label":"Un aveugle dépouillé de son billet gagnant pendant qu'il offrait une journée générale",
+    "guilty":5,
+    "suspects":[
+        {"role":"Barman",
+            "context": "Seule autre personne a avoir tenu le billet dans sa main"},
+        {"role":"Client alcoolique",
+            "context": "A passé la soirée a faire de grande embrassade à la victime, aurait pu en profiter pour voler le ticket"},
+        {"role":"Client retraité",
+            "context": "Ami proche de la victime, a une toute petite retraite et de grosses dettes"},
+        {"role":"Militaire",
+            "context": "Carrure impressionnante, aurait pu intimider la victime"},
+        {"role":"Serveur",
+            "context": "Passe inapercu pendant son service aurait pu froler la victime pour lui voler la victime"}
+    ],
+    "wordsI":["cristal","cérémonial","foule","appel","talent","retenir"],
+    "wordsG":["Goulot","pompette", "éloigné", "voix","imitateur","remplacement"]
+},{
+    "key": "Un gateau explosif",
+    "date":"Lundi 15 janvier",
+    "label":"2kg de TNT dans le gateau glacée...explosion à l'ambasse norvegienne",
+    "guilty":1,
+    "suspects":[
+        {"role":"Caviste",
+            "context": "Son apprentiussage ne sera pas renouvelé par le chef"},
+        {"role":"Chef de cuisine",
+            "context": "A très mauvais caractère, aucun ami parmi ses collgèues"},
+        {"role":"Maitre d'hotel",
+            "context": ""},
+        {"role":"Paparazzi",
+            "context": "Il y a 2 ans, l'ambassade lui avait fait un procès pour des photos non autorisées"},
+        {"role":"Pâtissier",
+        "context": "C'est quand même lui qui a fait le gateau"}
+    ],
+    "wordsI":["ingrédient","préalable","gastronomie","querelle","coin","consternation"],
+    "wordsG":["novice","prévis","cuisinier","vengeance","cache","indifférence"]
+},{
+    "key": "La dent dur",
+    "date":"Mardi 16 janvier",
+    "label":"Une retraitée nicoise assassinée le jour de son anniversaire pour lui voler son dentier",
+    "guilty":1,
+    "suspects":[
+        {"role":"Ami de la victime",
+            "context": "Possède un double de clef de la porte blindée"},
+        {"role":"Parent de la victime",
+            "context": "Détestait la victime depuis sa plus tendre enfance"},
+        {"role":"Infirmier",
+            "context": "Venait tous les jours à son domicile"},
+        {"role":"Voisin dentiste",
+            "context": "Lui avait posé son dentier"},
+        {"role":"Voisin linguiste",
+            "context": "Lui donnait des cours particuliers de diction"}
+    ],
+    "wordsI":["excentrique","champignons","alcool","boulette","vision","cloture"],
+    "wordsG":["déjanté","fraiche","bouffe", "champagne","ivresse","ouverture"]
+},{
+    "key": "La bonne farine du boulanger",
+    "date":"Mercredi 17 janvier",
+    "label":"Le boulanger Autrichien passait de la drogue dans les viennoiseries qu'ils vendait aux douaniers",
+    "guilty":1,
+    "suspects":[
+        {"role":"Dounanier Lamermich",
+            "context": "Habite juste à coté du poste de douane"},
+        {"role":"Douanier Chelkia",
+            "context": "Ramène parfois des viennoiseries a ses enfants"},
+        {"role":"Dounanier Perdusson",
+            "context": "A souvent les yeux plus gros que le ventre"},
+        {"role":"Douanier Chakillouis",
+            "context": "A été muté à ce poste juste avant le début de l'affaire"},
+        {"role":"Douanier Retrouvra",
+            "context": "A travaillé 10 ans chez les Stups"}
+    ],
+    "wordsI":["dormir","fenetre","insupportable","décibel","lourd","aucunement"],
+    "wordsG":["petit-dejeuner","faim", "restes", "corbeille","complice","bénéfice"]
+},{
+    "key": "Une bonne grosse dalle",
+    "date":"Jeudi 18 janvier",
+    "label":"Qui à noyé dans le béton la femme de pépé Figatelli, le mafieu Corse?",
+    "guilty":1,
+    "suspects":[
+        {"role":"Allemande",
+            "context": "A trouvé un petit cercueil sur le pas de sa porte"},
+        {"role":"Anglais",
+            "context": "Son numéro est dans le portable de Figatelli"},
+        {"role":"Belge",
+            "context": "A beaucoup financé 'bénévolement' le club de foot local"},
+        {"role":"Corse",
+            "context": "Fait partie de la famille rivale des Figatelli"},
+        {"role":"Parisien",
+            "context": "A beaucoup financé 'bénévolement' le journal local"}
+    ],
+    "wordsI":["projet","environnement","participation","incitation","pontif","abusif"],
+    "wordsG":["devis","demeure", "racket", "menace","dynamite","pousser"]
+},{
+    "key": "Un bon vol",
+    "date":"vendredi 19 janvier",
+    "label":"La bombe dans l'avion de la Swissair explose. 1h après l'atterissage: Aucune victime",
+    "guilty":1,
+    "suspects":[
+        {"role":"Bricoleur",
+            "context": "Revendique depuis 25 le droit d'invention du Couteau Suisse"},
+        {"role":"Horloger",
+            "context": "Membre d'honneur de l'association 'Ouvrez, ouvrez la cage aux coucous Suisses'"},
+        {"role":"Ingénieur",
+            "context": "Fait partie des séparatistes du canton de Vaux qui se prénomment 'Denis' (actuellement 1 seul membres)"},
+        {"role":"Mathématicien",
+            "context": "Membre fondateur des ASDVV: Association Suisse de Défense des Vaches Violettes"},
+        {"role":"Militant communiste",
+            "context": "Combat pour la levée du secret bancaire"}
+    ],
+    "wordsI":["affaire","carotte","politique","fermeté","détail","perpetuel"],
+    "wordsG":["volontaire","revendication", "ultimatum", "minuterie","rouage","heure d'hiver"]
+},{
+    "key": "Amateur d'Art",
+    "date":"vendredi 19 janvier",
+    "label":"Un sculpture Scythe volée dans les jardins du Louvre, aucune trace...",
+    "guilty":1,
+    "suspects":[
+        {"role":"Antiquaire",
+            "context": "On a retrouvé chez lui une grosse somme d'argent en espèce"},
+        {"role":"Conservateur du Louvre",
+            "context": "On a retrouvé des boulons de fixation de statue dans son bureau"},
+        {"role":"COnservateur du musée du Caire",
+            "context": "On a retrouvé chez luides tracts réclamantle retour des antiquités dans leur pays d'origine"},
+        {"role":"Gardien de nuit",
+            "context": "Etait de grade cette nuit la"},
+        {"role":"Gruiter",
+            "context": "Sa grue donne sur les jardins du Louvre"}
+    ],
+    "wordsI":["emplacement","riche","sécurité","hélicoptère","poids","enlévement"],
+    "wordsG":["commande","milliardaire", "montgolfière", "survol","corde","dépot"]
+},{
+    "key": "Soirée un peu trop arrosée",
+    "date":"Mercredi 24 janvier",
+    "label":"La scie truquée ne l'était plus, le magicien découpe sa femme pour de vrai",
+    "guilty":1,
+    "suspects":[
+        {"role":"Accessoiriste",
+            "context": "La scie provient des outils de son atelier"},
+        {"role":"Acrobate",
+            "context": "Ne supporte plus la grosse tête que c'est prise le magicien"},
+        {"role":"Attaché de presse",
+            "context": "Le magicien va changer d'attaché de presse"},
+        {"role":"Magicien",
+            "context": "Sa femme possédiat une grosse assurance-vie"},
+        {"role":"Pompier de service",
+            "context": "Est alcoolique et n'a pas toujours toute sa tête"}
+    ],
+        "wordsI":["collaborateur","chef d'oeuvre","altercation","accessoire","tête en l'air","perseverance"],
+    "wordsG":["menuisier","réparation", "scène", "spectacle","alzheimer","interversion"]
+},{
+    "key": "Soirée un peu trop arrosée",
+    "date":"Lundi 29 janvier",
+    "label":"Le noyé est mort pendu",
+    "guilty":1,
+    "suspects":[
+        {"role":"M. Amais",
+            "context": "La veille au soir, durant cette fête alcoolisée entre amis, il était le boute en train le plus dévoué"},
+        {"role":"M. Bandde",
+            "context": "la veille au soir, durant cette fête alcoolisée entre amis, il a incité plusieurs convives à réaliser les paris les plus fous"},
+        {"role":"M. Ruti",
+            "context": "la veille au soir, durant cette fête alcoolisée entre amis, il a harcelé la victime de jeux de mots insupportable"},
+        {"role":"M. Grozab",
+            "context": "la veille au soir, durant cette fête alcoolisée entre amis, il a sortie ses 4 vérités à la victime"},
+        {"role":"M. Quelbel",
+            "context": "la veille au soir, durant cette fête alcoolisée entre amis, il a revelé à la victime qu'il couchait avec son conjoint depuis 7 ans"}
+    ],
+    "wordsI":["potes","blagues","verres","plaisanterie","glissade","honnête"],
+    "wordsG":["copain","n'importe quoi", "ivre", "défi","roulette russe","triche"]
+}]

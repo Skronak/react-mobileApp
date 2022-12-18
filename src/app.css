@@ -1,10 +1,9 @@
 body {
-    background: linear-gradient(-45deg, #ff0000, #521313, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
+    background: linear-gradient(-45deg, #ff0000, #e30000, #000000, #2a9beb, #ffffff);
+    background-size: 200vh 100%;
     animation: gradient 20s ease infinite;
     margin: 0 5% 0 5%;
-    height: 100vh;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .background-container{
@@ -39,6 +38,10 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+
+#caseId {
+    height: 25vh
 }
 
 .mainTitle {
