@@ -9,11 +9,13 @@
         {"role":"Appartement 25-B",
         "context":"Son conjoint commissaire est arrivé à l'improviste pour poser des caméras de surveillance"},
         {"role":"Appartement 25-C",
-        "context": "Son conjoint pilote d'avion est arrvié à l'improviste pour une seconde lune de miel"},
+        "context": "Son conjoint pilote d'avion, est arrivé à l'improviste pour une seconde lune de miel"},
         {"role":"Appartement 25-D",
         "context": "Son conjoint millionnaire du loto est arrivé à l'improviste pour un tour du monde"},
         {"role":"Appartement 25-E",
-        "context": "Sa belle mère est arrivée à l'improviste pour se faire héberger pendant une petite semaine"}
+        "context": "Sa belle mère est arrivée à l'improviste pour se faire héberger pendant une petite semaine"},
+        {"role":"Autre appartement",
+            "context": "Personne discrete et sans histoire, à moins que..."}
     ],
     "wordsI":["respectueuse","transatlantique","boulevard","sonnette","accord","milieu"],
     "wordsG":["légitime","imprévu", "maitresse", "interphone","surprise","cachette"]
@@ -25,15 +27,17 @@
         "suspects":[
             {"role":"Archeveque",
             "context": "Sa ressemblance avec George Clooney lui attirer des regard concupiscent (coquin, sensuels), aurait il craqué?"},
-            {"role":"Archipretre recteur",
+            {"role":"Archiprêtre recteur",
             "context": "On prétend qu'il fréquente des forums tres hot sur internet sous le pseudonyme pépére fouettard"},
             {"role":"Doyen du chapitre",
                 "context": "On aurait retrouvé dans sa bibliothèque des revue pornographiques cachés dans des livres de priere"},
-                {"role":"Grand prieur du Saint sépulcre",
-                    "context": "On aurait retrouvé des emballages de viagra a moitié consummé dans la cheminé située dans son bureau"},
-                    {"role":"Maitre de chapelle",
-                        "context": "Responsable maniaque de l'entretien des encensoirs, il n'en confie la tache a personne d'autre"}
-                                ],
+            {"role":"Grand prieur du Saint sépulcre",
+                "context": "On aurait retrouvé des emballages de viagra a moitié consummé dans la cheminé située dans son bureau"},
+            {"role":"Maitre de chapelle",
+                "context": "Responsable maniaque de l'entretien des encensoirs, il n'en confie la tache a personne d'autre"},
+            {"role":"Personne présente à la messe",
+                "context": "Ne venait plus à la messe depuis un moment, est revenu pile le jour de l'incident"}
+        ],
         "wordsI":["terme","austère","chair","extase","malin","possession"],
         "wordsG":["fin","rude", "fécondation", "névrose","infernal","don"]
     },{
@@ -51,7 +55,9 @@
         {"role":"Patisser",
             "context": "Avait été accusé par le boulanger de mettre de la sciure dans sa pate"},
         {"role":"Restaurateur Grec",
-            "context": "Avait été accusé par le boulanger d'employer des turcs non déclarer"}
+            "context": "Avait été accusé par le boulanger d'employer des turcs non déclarer"},
+        {"role":"Client de la boulangerie",
+            "context": "Ancien client du boulanger, insatisfait du service"}
     ],
     "wordsI":["bavard","cafard","ruine","visite","guide","étoile"],
     "wordsG":["calomnie","rats", "fermeture", "déguisé","analyse","punition"]
@@ -62,7 +68,7 @@
     "guilty":2,
     "suspects":[
         {"role":"Barman",
-            "context": "Est le dernier a aoir vu la victime"},
+            "context": "Est le dernier a avoir vu la victime"},
         {"role":"Chef cuisinier Belge",
             "context": "Au bar du train, de nombreux témoins affirme l'avoir vu avoir une vive dispute avec la victime"},
         {"role":"Chef cuisinier Francais",
@@ -70,7 +76,9 @@
         {"role":"Controleur",
             "context": "La victime n'avait pas de titre de transport sur lui"},
         {"role":"Manager Fast Food",
-            "context": "Est resté seul avec la victime pendant longtemps dans son compartiment"}
+            "context": "Est resté seul avec la victime pendant longtemps dans son compartiment"},
+        {"role":"Passager TGV",
+            "context": "Etait présent dans le même wagon que la victime"}
     ],
     "wordsI":["Autre","voyageur", "éponge", "éffacé","tympan","laisser-passer"],
     "wordsG":["proche","contremarque","soif","timide","silence","vérification"]
@@ -89,7 +97,9 @@
         {"role":"Voisin du dessus",
             "context": "Sa chambre est juste au dessus de la télé de la victime"},
         {"role":"Voisin d'en face",
-            "context": "La victime s'essuyait toujours les pieds sur son paillasson"}
+            "context": "La victime s'essuyait toujours les pieds sur son paillasson"},
+        {"role":"Autre voisin",
+            "context": "La victime s'essuyait aussi les pieds sur son paillasson"}
     ],
     "wordsI":["dormir","fenetre","insupportable","décibel","lourd","aucunement"],
     "wordsG":["Ecran","fermé", "patience", "oreilles","forcer","quelque-chose"]
@@ -109,7 +119,9 @@
         {"role":"Directeur d'usine",
             "context": "Profite de son statut pour séduire"},
         {"role":"Mécano d'usine",
-            "context": "Fréquente régulièrement les boites de nuit un peu chaudes"}
+            "context": "Fréquente régulièrement les boites de nuit un peu chaudes"},
+        {"role":"Visiteur de l'usine",
+            "context": "Etait présent à l'occasion d'une journée porte ouverte le jour du décés de la victime"}
     ],
     "wordsI":["chocolaterie","livraison","foncé","manoeuvre","gout","superficiel"],
     "wordsG":["Usine","fournitures", "blanche", "flirt","parfum","tête"]
@@ -128,14 +140,17 @@
         {"role":"Militaire",
             "context": "Carrure impressionnante, aurait pu intimider la victime"},
         {"role":"Serveur",
-            "context": "Passe inapercu pendant son service aurait pu froler la victime pour lui voler la victime"}
+            "context": "Passe inapercu pendant son service aurait pu froler la victime pour lui voler la victime"},
+        {"role":"Client",
+            "context": "Client ayant profité de la tournée générale et ayant entendu que la victime avait touché le jackpot"}
+
     ],
     "wordsI":["cristal","cérémonial","foule","appel","talent","retenir"],
     "wordsG":["Goulot","pompette", "éloigné", "voix","imitateur","remplacement"]
 },{
     "key": "Un gateau explosif",
     "date":"Lundi 15 janvier",
-    "label":"2kg de TNT dans le gateau glacée...explosion à l'ambasse norvegienne",
+    "label":"2kg de TNT dans le gateau glacée...explosion à l'ambassade norvegienne",
     "guilty":1,
     "suspects":[
         {"role":"Caviste",
@@ -147,7 +162,9 @@
         {"role":"Paparazzi",
             "context": "Il y a 2 ans, l'ambassade lui avait fait un procès pour des photos non autorisées"},
         {"role":"Pâtissier",
-        "context": "C'est quand même lui qui a fait le gateau"}
+        "context": "C'est quand même lui qui a fait le gateau"},
+        {"role":"Convive à la reception",
+            "context": "N'a pas assisté à la reception sans donner de raison particulière"}
     ],
     "wordsI":["ingrédient","préalable","gastronomie","querelle","coin","consternation"],
     "wordsG":["novice","prévis","cuisinier","vengeance","cache","indifférence"]
@@ -166,7 +183,9 @@
         {"role":"Voisin dentiste",
             "context": "Lui avait posé son dentier"},
         {"role":"Voisin linguiste",
-            "context": "Lui donnait des cours particuliers de diction"}
+            "context": "Lui donnait des cours particuliers de diction"},
+        {"role":"Membre du club de bridge",
+            "context": "Connaissait la victime qui fréquentait le même club tout les jeudi de 14h16 à 17h20."}
     ],
     "wordsI":["excentrique","champignons","alcool","boulette","vision","cloture"],
     "wordsG":["déjanté","fraiche","bouffe", "champagne","ivresse","ouverture"]
@@ -185,7 +204,10 @@
         {"role":"Douanier Chakillouis",
             "context": "A été muté à ce poste juste avant le début de l'affaire"},
         {"role":"Douanier Retrouvra",
-            "context": "A travaillé 10 ans chez les Stups"}
+            "context": "A travaillé 10 ans chez les Stups"},
+        {"role":"Douanier",
+            "context": "Travaille au douanes depuis longtemps et à du mal à terminer ses fin de mois"}
+
     ],
     "wordsI":["dormir","fenetre","insupportable","décibel","lourd","aucunement"],
     "wordsG":["petit-dejeuner","faim", "restes", "corbeille","complice","bénéfice"]
@@ -204,7 +226,10 @@
         {"role":"Corse",
             "context": "Fait partie de la famille rivale des Figatelli"},
         {"role":"Parisien",
-            "context": "A beaucoup financé 'bénévolement' le journal local"}
+            "context": "A beaucoup financé 'bénévolement' le journal local"},
+        {"role":"Ancien Policier",
+            "context": "A poursuivi sans relache pépé tout au long de sa carrière pour être finallement remercié, faute de résultat"}
+
     ],
     "wordsI":["projet","environnement","participation","incitation","pontif","abusif"],
     "wordsG":["devis","demeure", "racket", "menace","dynamite","pousser"]
@@ -223,7 +248,9 @@
         {"role":"Mathématicien",
             "context": "Membre fondateur des ASDVV: Association Suisse de Défense des Vaches Violettes"},
         {"role":"Militant communiste",
-            "context": "Combat pour la levée du secret bancaire"}
+            "context": "Combat pour la levée du secret bancaire"},
+        {"role":"Mécanicien de l'aeroport",
+            "context": "Milite depuis des années pour avoir plus de temps afin de vérifier les avions avant chaque décollage"}
     ],
     "wordsI":["affaire","carotte","politique","fermeté","détail","perpetuel"],
     "wordsG":["volontaire","revendication", "ultimatum", "minuterie","rouage","heure d'hiver"]
@@ -237,12 +264,14 @@
             "context": "On a retrouvé chez lui une grosse somme d'argent en espèce"},
         {"role":"Conservateur du Louvre",
             "context": "On a retrouvé des boulons de fixation de statue dans son bureau"},
-        {"role":"COnservateur du musée du Caire",
+        {"role":"Conservateur du musée du Caire",
             "context": "On a retrouvé chez luides tracts réclamantle retour des antiquités dans leur pays d'origine"},
         {"role":"Gardien de nuit",
             "context": "Etait de grade cette nuit la"},
         {"role":"Gruiter",
-            "context": "Sa grue donne sur les jardins du Louvre"}
+            "context": "Sa grue donne sur les jardins du Louvre"},
+        {"role":"Amateur d'Art",
+            "context": "Semblait envouté par la beauté de la sculpture lors de sa dernière visite au musée"}
     ],
     "wordsI":["emplacement","riche","sécurité","hélicoptère","poids","enlévement"],
     "wordsG":["commande","milliardaire", "montgolfière", "survol","corde","dépot"]
@@ -261,7 +290,9 @@
         {"role":"Magicien",
             "context": "Sa femme possédiat une grosse assurance-vie"},
         {"role":"Pompier de service",
-            "context": "Est alcoolique et n'a pas toujours toute sa tête"}
+            "context": "Est alcoolique et n'a pas toujours toute sa tête"},
+        {"role":"Spectateur mécontent",
+        "context": "A demandé avec insistance à être remboursé après vu un des spectacles, sans succès"}
     ],
         "wordsI":["collaborateur","chef d'oeuvre","altercation","accessoire","tête en l'air","perseverance"],
     "wordsG":["menuisier","réparation", "scène", "spectacle","alzheimer","interversion"]
@@ -280,7 +311,9 @@
         {"role":"M. Grozab",
             "context": "la veille au soir, durant cette fête alcoolisée entre amis, il a sortie ses 4 vérités à la victime"},
         {"role":"M. Quelbel",
-            "context": "la veille au soir, durant cette fête alcoolisée entre amis, il a revelé à la victime qu'il couchait avec son conjoint depuis 7 ans"}
+            "context": "la veille au soir, durant cette fête alcoolisée entre amis, il a revelé à la victime qu'il couchait avec son conjoint depuis 7 ans"},
+        {"role":"Convive de la soirée",
+            "context": "Il a revelé à la victime, sous l'emprise de l'acool qu'il couchait également avec son conjoint depuis de nombreuses années"}
     ],
     "wordsI":["potes","blagues","verres","plaisanterie","glissade","honnête"],
     "wordsG":["copain","n'importe quoi", "ivre", "défi","roulette russe","triche"]

@@ -2,13 +2,13 @@ import React from 'react';
 
 function BoardSuspect(props) {
     const {data, idPlayer, isGuilty} = props;
-    const role = +idPlayer > (data.suspects.length) ? `${data.suspects[data.suspects.length - 1]} - ${+idPlayer + 1 - +data.suspects.length}` : data.suspects[+idPlayer - 1];
+    const role = +idPlayer > (data.suspects.length) ? `${data.suspects[data.suspects.length - 1].role} - ${+idPlayer + 1 - +data.suspects.length}` : data.suspects[+idPlayer - 1].role;
     const words = isGuilty ? data.wordsG : data.wordsI;
 
     return (
         <div>
             <div className={"case-context"}>{data.label}</div>
-            <div className="case-role">Role {role.role}</div>
+            <div className="case-role">Role {role}</div>
             <div className={"bloc"}>
                 <ul className="list-group">
                     <li className="list-group-item active">Premier Interrogatoire</li>

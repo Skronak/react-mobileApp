@@ -17,9 +17,9 @@ export default function App() {
     const [nbPlayers, setNbPlayers] = useState(1);
     const [idPlayer, setIdPlayer] = useState(1);
     const [seed, setSeed] = useState('amis');
-    const [selectedCase, setSelectedCase] = useState('0201');
     const [idGuilty, setIdGuilty] = useState(0);
     const cases = new Map(data.map(obj => [obj.key, obj]));
+    const [selectedCase, setSelectedCase] = useState(data[0].key);
     const [isFlipped, setFlipped] = useState(false);
 
     const handleChange = (event) => {
@@ -109,7 +109,7 @@ export default function App() {
                             <div id="collapse" className={isDetective ? "hide" : "show"}>
                                 <div>Vous etes le témoin n°</div>
                                 <input type="number" disabled={isDetective} className="form-control"
-                                       onChange={e => setIdPlayer(e.target.value > nbPlayers ? nbPlayers : e.target.value)}
+                                       onChange={e => setIdPlayer(+e.target.value > +nbPlayers ? nbPlayers : e.target.value)}
                                        min='0' value={idPlayer}/>
                             </div>
                         </div>
