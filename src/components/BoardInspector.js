@@ -9,7 +9,6 @@ function BoardInspector(props) {
             <div className={"case-context"}>{data.label}</div>
             <div>Suspects</div>
             <ul className="list-group">
-                {/*//attention si ca depasse liste*/}
                 {[...Array(+nbPlayers)].map((k, i) => (
                     <div className={"bloc"}>
                         <li key={i} className="list-group-item item">

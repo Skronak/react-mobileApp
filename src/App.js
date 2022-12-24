@@ -36,9 +36,22 @@ export default function App() {
         console.log(idGuilty);
     }, [idGuilty]);
 
+    function createRoles(casedata, lastSuspect) {
+        for (let i = casedata.suspects.length - 1; i < +nbPlayers; i++) {
+            casedata.suspects.push({role: `${lastSuspect.role} - ${+nbPlayers - i}`, context: lastSuspect.context});
+        }
+    }
+
     const startGame = (e) => {
         let rand = randGeneratorFrom(seed + selectedCase);
         setIdGuilty(rand(1, nbPlayers));
+        let casedata = cases.get(selectedCase);
+        let lastSuspect = casedata.suspects[casedata.suspects.length-1];
+
+        if (+nbPlayers > (casedata.suspects.length)) {
+            createRoles(casedata, lastSuspect);
+        };
+
         toggleScreen(e);
     }
 

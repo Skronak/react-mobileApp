@@ -2,7 +2,7 @@ import React from 'react';
 
 function BoardSuspect(props) {
     const {data, idPlayer, isGuilty} = props;
-    const role = +idPlayer > (data.suspects.length) ? `${data.suspects[data.suspects.length - 1].role} - ${+idPlayer + 1 - +data.suspects.length}` : data.suspects[+idPlayer - 1].role;
+    const role = data.suspects[+idPlayer - 1].role;
     const words = isGuilty ? data.wordsG : data.wordsI;
 
     return (
