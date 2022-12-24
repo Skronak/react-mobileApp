@@ -98,6 +98,11 @@ body {
     border-color: white;
 }
 
+.suspects-scroll {
+    height: 60vh;
+    overflow-y: scroll;
+}
+
 list-group-item {
     text-align: center;
 }

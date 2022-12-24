@@ -5,10 +5,9 @@ function BoardInspector(props) {
 
     return (
         <div>
-            <p>Vous etes l'enqueteur</p>
             <div className={"case-context"}>{data.label}</div>
             <div>Suspects</div>
-            <ul className="list-group">
+            <ul className="list-group suspects-scroll">
                 {[...Array(+nbPlayers)].map((k, i) => (
                     <div className={"bloc"}>
                         <li key={i} className="list-group-item item">

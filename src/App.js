@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import BoardSuspect from './components/BoardSuspect.js';
-import BoardInspector from './components/BoardInspector.js';
-import Board from './components/Board.js';
+import BoardSuspect from './components/board/BoardSuspect.js';
+import BoardInspector from './components/board/BoardInspector.js';
+import Board from './components/board/Board.js';
 import data from './data.json';
 import './bootstrap.min.css';
 import './app.css';
