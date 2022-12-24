@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-mobileApp/static/css/main.35f5595b.css",
-    "main.js": "/react-mobileApp/static/js/main.21bc52a9.js",
+    "main.css": "/react-mobileApp/static/css/main.86680beb.css",
+    "main.js": "/react-mobileApp/static/js/main.c3aec9d7.js",
     "static/media/avatar-innocent.png": "/react-mobileApp/static/media/avatar-innocent.dafe8b5dbe4d49b4ec5d.png",
     "static/media/avatar-criminal.png": "/react-mobileApp/static/media/avatar-criminal.798e0889f6f43bf74896.png",
     "static/media/avatar-detective.png": "/react-mobileApp/static/media/avatar-detective.f26714751aa74a1351ea.png",
     "index.html": "/react-mobileApp/index.html",
-    "main.35f5595b.css.map": "/react-mobileApp/static/css/main.35f5595b.css.map",
-    "main.21bc52a9.js.map": "/react-mobileApp/static/js/main.21bc52a9.js.map"
+    "main.86680beb.css.map": "/react-mobileApp/static/css/main.86680beb.css.map",
+    "main.c3aec9d7.js.map": "/react-mobileApp/static/js/main.c3aec9d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.35f5595b.css",
-    "static/js/main.21bc52a9.js"
+    "static/css/main.86680beb.css",
+    "static/js/main.c3aec9d7.js"
   ]
 }
