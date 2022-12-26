@@ -23,9 +23,19 @@ body {
 }
 
 #start-button, #end-button {
+    width: 100%;
+    padding: 0;
+    height: 4em;
     margin-top: 2em;
     text-transform: uppercase;
-    font-weight: bold;
+    color: white;
+    background-color: #21bb44;
+    font-weight: 700;
+    border: double;
+}
+
+#end-button {
+    background-color: #084298;
 }
 
 @keyframes gradient {
@@ -48,11 +58,6 @@ body {
     color: white;
 }
 
-#start-button, #end-button{
-    width: 100%;
-    padding-top: 1em;
-}
-
 .bloc {
     padding-top: 1em;
 }
@@ -67,6 +72,7 @@ body {
     font-size: 1.2em;
 }
 .case-context {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     padding: 5% 0% 5% 0%;
     margin-top: 1em;
 }
@@ -96,11 +102,6 @@ body {
 .list-group {
     --bs-list-group-active-bg: #2b2b2b;
     border-color: white;
-}
-
-.suspects-scroll {
-    height: 60vh;
-    overflow-y: scroll;
 }
 
 list-group-item {
@@ -205,4 +206,81 @@ img{
     color: white;
     font-size: 2.5em;
     text-align: center;
+}
+
+.suspects-bloc {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    margin-bottom: 5%;
+    text-align: center;
+    background-color: #f1f1f1;
+    list-style-type: none;
+}
+
+.suspects-scroll {
+    height: 50vh;
+    overflow-y: scroll;
+    padding-inline-start: 0px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+/*    background-color: black;
+    border: solid white;*/
+}
+.suspects-role {
+    background-color: lightgrey;
+}
+
+.form-control {
+    display: block;
+    width: 97%;
+    height: 2em;
+    padding: 0 0 0 .5rem;
+    font-size: 1rem;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s
+}
+
+.divider{
+    width: 90%;
+    height: .5em;
+    border-bottom: 1px solid black;
+    position: absolute;
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    padding-left: 0.5em;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    appearance: none;
+}
+
+.case-words {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    margin: 5%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.list-group-item .active {
+    font-weight: 600;
+}
+
+.list-group-interrogatoire{
+    font-size: 2em;
+    position: absolute;
 }

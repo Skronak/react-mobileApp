@@ -3,7 +3,7 @@ import BoardSuspect from './components/board/BoardSuspect.js';
 import BoardInspector from './components/board/BoardInspector.js';
 import Board from './components/board/Board.js';
 import data from './data.json';
-import './bootstrap.min.css';
+//import './bootstrap.min.css';
 import './app.css';
 import seedrandom from 'seedrandom';
 import detective from "./img/avatar-detective.png";
@@ -103,12 +103,12 @@ export default function App() {
                         </div>
                         <div className={"bloc"}>
                             <div>Nombre de joueurs</div>
-                            <input type="number" className="form-control" onChange={e => setNbPlayers(e.target.value)}
+                            <input type="number" className="form-control" onChange={e => setNbPlayers(e.target.value-1)}
                                    min='0'
-                                   value={nbPlayers}/>
+                                   value={nbPlayers+1}/>
                         </div>
                         <div className={"bloc"}>
-                            <div className="table-group-divider"></div>
+                            <div className="divider"></div>
                         </div>
                         <div className={"bloc"}>
                             <label className="toggle">
@@ -120,14 +120,14 @@ export default function App() {
                         </div>
                         <div className={"bloc"}>
                             <div id="collapse" className={isDetective ? "hide" : "show"}>
-                                <div>Vous etes le témoin n°</div>
+                                <div>Vous êtes le témoin n°</div>
                                 <input type="number" disabled={isDetective} className="form-control"
                                        onChange={e => setIdPlayer(+e.target.value > +nbPlayers ? nbPlayers : e.target.value)}
                                        min='0' value={idPlayer}/>
                             </div>
                         </div>
                         <div className={"bloc"}>
-                            <div>Affaire selectionnée</div>
+                            <div>Affaire selectionnée ({[...cases.keys()].length})</div>
                             <select id='caseId' className="form-select" name="case" size={5} value={selectedCase}
                                     onChange={(e => setSelectedCase(e.target.value))}>
                                 {[...cases.keys()].map(e => <option value={e}>{e}</option>)}
