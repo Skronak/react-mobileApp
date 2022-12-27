@@ -46,11 +46,12 @@ export default function App() {
         let rand = randGeneratorFrom(seed + selectedCase);
         setIdGuilty(rand(1, nbPlayers));
         let casedata = cases.get(selectedCase);
-        let lastSuspect = casedata.suspects[casedata.suspects.length-1];
+        let lastSuspect = casedata.suspects[casedata.suspects.length - 1];
 
         if (+nbPlayers > (casedata.suspects.length)) {
             createRoles(casedata, lastSuspect);
-        };
+        }
+        ;
 
         toggleScreen(e);
     }
@@ -74,38 +75,40 @@ export default function App() {
         <div onClick={() => flip()}>
             <AnimatedBackground/>
             {!isGameVisible ? <p className={"mainTitle"}>Petits meurtres entre amis - Mobile</p> : null}
-            <div className={`container fiche ${isFlipped && isGameVisible ? "flip" : ""}`} >
+            <div className={`container fiche ${isFlipped && isGameVisible ? "flip" : ""}`}>
 
                 {isGameVisible ? (
                     <>
-                            <Board data={cases.get(selectedCase)}>
-                                {isDetective ? (
-                                    <BoardInspector data={cases.get(selectedCase)} nbPlayers={nbPlayers}/>
-                                ) : (
-                                    <BoardSuspect data={cases.get(selectedCase)} idPlayer={+idPlayer}
-                                                  isGuilty={+idPlayer === +idGuilty}/>
-                                )}
-                                <input id='end-button' type="button" className="btn btn-dark"
-                                       onClick={(e) => endGame(e)}
-                                       value="Terminer la partie"/>
-                            </Board>
+                        <Board data={cases.get(selectedCase)}>
+                            {isDetective ? (
+                                <BoardInspector data={cases.get(selectedCase)} nbPlayers={nbPlayers}/>
+                            ) : (
+                                <BoardSuspect data={cases.get(selectedCase)} idPlayer={+idPlayer}
+                                              isGuilty={+idPlayer === +idGuilty}/>
+                            )}
+                            <input id='end-button' type="button" className="btn btn-dark"
+                                   onClick={(e) => endGame(e)}
+                                   value="Terminer la partie"/>
+                        </Board>
                         <div className="back">
-                            <p className={"flip-label"}>{isDetective ? "DETECTIVE" : +idPlayer===+idGuilty ? "COUPABLE" : "INNOCENT"}</p>
-                            <img alt="avatar" src={isDetective ? detective : +idPlayer===+idGuilty ? criminal : innocent}/>
+                            <p className={"flip-label"}>{isDetective ? "DETECTIVE" : +idPlayer === +idGuilty ? "COUPABLE" : "INNOCENT"}</p>
+                            <img alt="avatar"
+                                 src={isDetective ? detective : +idPlayer === +idGuilty ? criminal : innocent}/>
                         </div>
                     </>
                 ) : (
                     <form>
                         <div className={"bloc"}>
-                            <div>Clé (mot unique a chaque partie)</div>
+                            <div>Clé (Unique à chaque partie)</div>
                             <input type="text" className="form-control" onChange={e => setSeed(e.target.value)} min='0'
                                    value={seed}/>
                         </div>
                         <div className={"bloc"}>
                             <div>Nombre de joueurs</div>
-                            <input type="number" className="form-control" onChange={e => setNbPlayers(e.target.value-1)}
+                            <input type="number" className="form-control"
+                                   onChange={e => setNbPlayers(e.target.value - 1)}
                                    min='0'
-                                   value={nbPlayers+1}/>
+                                   value={nbPlayers + 1}/>
                         </div>
                         <div className={"bloc"}>
                             <div className="divider"></div>
@@ -130,7 +133,7 @@ export default function App() {
                             <div>Affaire selectionnée ({[...cases.keys()].length})</div>
                             <select id='caseId' className="form-select" name="case" size={5} value={selectedCase}
                                     onChange={(e => setSelectedCase(e.target.value))}>
-                                {[...cases.keys()].map(e => <option value={e}>{e}</option>)}
+                                {[...cases.keys()].map((e, i) => <option value={e}>{i + 1} - {e}</option>)}
                             </select>
                         </div>
                         <div className={"bloc"}>

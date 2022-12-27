@@ -13,7 +13,7 @@ function BoardSuspect(props) {
                 <ul className="case-words">
                     <li className="list-group-interrogatoire">I</li>
                     {[0, 1, 2].map(word => (
-                        <li key={word} className="list-group-item">{words[word]}</li>
+                        <li key={word} className="list-item-interrogatoire">{words[word]}</li>
                     ))}
                 </ul>
             </div>
@@ -21,7 +21,7 @@ function BoardSuspect(props) {
                 <ul className="case-words">
                     <li className="list-group-interrogatoire">II</li>
                     {[3, 4, 5].map(word => (
-                        <li key={word} className="list-group-item">{words[word]}</li>
+                        <li key={word} className="list-item-interrogatoire">{words[word]}</li>
                     ))}
                 </ul>
             </div>
